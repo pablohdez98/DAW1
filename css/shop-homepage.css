@@ -33,6 +33,11 @@ body {
   margin-bottom: 1em;
 }
 
+td {
+  margin-top: auto;
+  margin-bottom:auto;
+}
+
 .social-link {
   width: 30px;
   height: 30px;
@@ -208,48 +213,4 @@ body {
   .foro input[type=submit] {
     width: 100%;
   }
-}
-
-
-
-.productIncrease {
-  background: #f2f2f2;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #f2f2f2;
-  font-family: Biotif, "Noto Sans, Noto Sans JP, Noto Sans KR", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: .2px;
-  color: #000;
-  line-height: 1.5rem;
-  display: inline-flex;
-  text-decoration: none;
-  transition: background .2s;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 40px;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  box-shadow: 0 2px 1px 0 #ccc;
-  white-space: nowrap;
-  width: auto;
-  box-sizing: border-box;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  margin-left: 0;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  vertical-align: top;
-  align-items: center;
-  justify-content: center;
 }
