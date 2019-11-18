@@ -9,7 +9,7 @@
       "gender": "male",
       "colors": ["verde","gris"],
       "price": "29,99€",
-      "img": "/img/hombre/pijama.jpg",
+      "img": "img/hombre/pijama.jpg",
       "new": false,
       "trending": true,
       "opinion": [
@@ -36,7 +36,7 @@
       "gender": "male",
       "colors": ["azul"],
       "price": "79,95€",
-      "img": "/img/hombre/vaqueroHombre.jpg",
+      "img": "img/hombre/vaqueroHombre.jpg",
       "new": true,
       "trending": true,
       "opinion": [
@@ -63,7 +63,7 @@
       "gender": "male",
       "colors": ["rojo"],
       "price": "49,99€",
-      "img": "/img/hombre/poloRojo.jpg",
+      "img": "img/hombre/poloRojo.jpg",
       "new": false,
       "trending": false
     },
@@ -76,7 +76,7 @@
       "gender": "female",
       "colors": ["verde","rojo"],
       "price": "36,95€",
-      "img": "/img/mujer/vaqueroNegro.jpg",
+      "img": "img/mujer/vaqueroNegro.jpg",
       "new": true,
       "trending": true
     },
@@ -89,7 +89,7 @@
       "gender": "female",
       "colors": ["verde","rojo"],
       "price": "75,99€",
-      "img": "/img/mujer/chaquetaPiel.jpg",
+      "img": "img/mujer/chaquetaPiel.jpg",
       "new": true,
       "trending": true
     },
@@ -102,7 +102,7 @@
       "gender": "female",
       "colors": ["verde","rojo"],
       "price": "8€",
-      "img": "/img/mujer/shortsNegros.jpg",
+      "img": "img/mujer/shortsNegros.jpg",
       "new": true,
       "trending": true
     },
@@ -115,7 +115,7 @@
       "gender": "female",
       "colors": ["verde","rojo"],
       "price": "19,99€",
-      "img": "/img/mujer/blusaAzul.jpg",
+      "img": "img/mujer/blusaAzul.jpg",
       "new": true,
       "trending": true
     },
@@ -128,7 +128,7 @@
       "gender": "female",
       "colors": ["negro"],
       "price": "89,99€",
-      "img": "/img/mujer/faldaNegra.jpg",
+      "img": "img/mujer/faldaNegra.jpg",
       "new": true,
       "trending": true
     },
@@ -141,7 +141,7 @@
       "gender": "male",
       "colors": ["verde","rojo"],
       "price": "99,99€",
-      "img": "/img/hombre/trajeChaqueta.jpg",
+      "img": "img/hombre/trajeChaqueta.jpg",
       "new": true,
       "trending": true
     },
@@ -154,7 +154,7 @@
       "gender": "male",
       "colors": ["verde","rojo"],
       "price": "89,95€",
-      "img": "/img/hombre/zapatillasNike.jpg",
+      "img": "img/hombre/zapatillasNike.jpg",
       "new": true,
       "trending": true
     },
@@ -167,7 +167,7 @@
       "gender": "male",
       "colors": ["verde","rojo"],
       "price": "10€",
-      "img": "/img/hombre/bañadorAzul.jpg",
+      "img": "img/hombre/bañadorAzul.jpg",
       "new": true,
       "trending": true
     },
@@ -180,7 +180,7 @@
       "gender": "female",
       "colors": ["verde","rojo"],
       "price": "93,95€",
-      "img": "/img/mujer/abrigoBlanco.jpg",
+      "img": "img/mujer/abrigoBlanco.jpg",
       "new": true,
       "trending": true
     },
@@ -193,7 +193,7 @@
       "gender": "female",
       "colors": ["blanco"],
       "price": "59,99€",
-      "img": "/img/mujer/vestidoBlanco.jpg",
+      "img": "img/mujer/vestidoBlanco.jpg",
       "new": true,
       "trending": true
     },
@@ -206,7 +206,7 @@
       "gender": "male",
       "colors": ["verde","rojo"],
       "price": "45,99€",
-      "img": "/img/hombre/chalecoAzul.jpg",
+      "img": "img/hombre/chalecoAzul.jpg",
       "new": true,
       "trending": true
     }
