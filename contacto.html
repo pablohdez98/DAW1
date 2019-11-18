@@ -109,8 +109,8 @@
 
             <div class="md-form mb-2">
               <i class="material-icons text-danger">lock</i>
-              <input type="password" id="defaultForm-pass" class="form-control validate"
-                placeholder="Introduce tu contraseña">
+              <input type="password" id="defaultForm-pass" pattern=".{6,}" maxlength="12"
+                  class="form-control validate" placeholder="Introduce tu contraseña" required>
             </div>
 
           </div>
@@ -124,7 +124,7 @@
 
     <!-- Page Content -->
     <div class="container">
-      <section class="mb-4">
+      <section class="mb-4 bg-light pb-3 rounded border border-dark px-5 mt-5">
         <div class="col-lg-9">
           <h1 class="font-weight-bold text-center my-4">Contáctanos</h1>
           <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna pregunta? No dudes en ponerte en contacto con
@@ -135,21 +135,24 @@
 
           <!-- col-right -->
           <div class="col-md-9 mb-md-0 mb-5">
-            <form action="">
+            <!--form-->
+            <form action="" id="contactForm">
 
               <!-- row -->
               <div class="row">
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <label for="name" class="">Nombre</label>
-                    <input type="text" id="name" name="name" class="form-control">
+                    <input type="text" id="contactName" name="contactName" class="form-control">
+                    <small id="nameFail" class="form-text error-message">Rellene este campo.</small>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <label for="email" class="">Dirección de email</label>
-                    <input type="text" id="email" name="email" class="form-control">
+                    <input type="text" id="contactEmail" name="contactEmail" class="form-control validate">
+                    <small id="emailFail" class="form-text error-message">Por favor, introduzca un email válido.</small>
                   </div>
                 </div>
               </div>
@@ -160,7 +163,8 @@
                 <div class="col-md-12">
                   <div class="md-form mb-0 mt-2">
                     <label for="subject" class="">Asunto</label>
-                    <input type="text" id="subject" name="subject" class="form-control">
+                    <input type="text" id="contactSubject" name="contactSubject" class="form-control" maxlength="60">
+                    <small id="subjectFail" class="form-text error-message">Por favor, introduzca un asunto de mínimo 5 caracteres.</small>
                   </div>
                 </div>
               </div>
@@ -171,20 +175,23 @@
                 <div class="col-md-12">
                   <div class="md-form mt-2">
                     <label for="message">Mensaje</label>
-                    <textarea type="text" id="message" name="message" rows="5"
-                      class="form-control md-textarea"></textarea>
+                    <textarea type="text" id="contactMessage" name="message" rows="5" maxlength="1000"
+                      class="form-control md-textarea" ></textarea>
+                    <small id="messageFail" class="form-text error-message">Por favor, introduzca un asunto de mínimo 20 caracteres.</small>
                   </div>
                 </div>
               </div>
+
+              <!-- button -->
+              <div class="text-center text-md-left mt-3">
+                <button class="btn btn-danger" type="submit">Enviar</button>
+              </div>
+              <div class="status"></div>
+              <!-- End button -->
+
               <!-- End row -->
             </form>
-
-            <!-- button -->
-            <div class="text-center text-md-left mt-3">
-              <button class="btn btn-danger" type="submit">Enviar</button>
-            </div>
-            <div class="status"></div>
-            <!-- End button -->
+            <!--End form-->
 
           </div>
           <!-- End col-right -->
@@ -214,25 +221,26 @@
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-      <div class="row m-0 justify-content-end align-items-center">
-        <div class="col-6 col-md-8">
-          <p class="m-0 text-center text-white">Copyright &copy; CanaryShop 2019</p>
-        </div>
-        <div class="col-5 col-md-2">
-          <a href="https://www.twitter.com" target="_blank"
-            class="a-no-style fa fa-twitter color-twitter size-custom mr-2 pr-1"></a>
-          <a href="https://www.instagram.com" target="_blank"
-            class="a-no-style fa fa-instagram color-instagram size-custom mr-2 pr-1"></a>
-          <a href="https://www.facebook.com" target="_blank"
-            class="a-no-style fa fa-facebook color-facebook size-custom mr-2 pr-1"></a>
-        </div>
+    <div class="row m-0 justify-content-end align-items-center">
+      <div class="col-6 col-md-8">
+        <p class="m-0 text-center text-white">Copyright &copy; CanaryShop 2019</p>
       </div>
-    </footer>
+      <div class="col-5 col-md-2">
+        <a href="https://www.twitter.com" target="_blank"
+          class="a-no-style fa fa-twitter color-twitter size-custom mr-2 pr-1"></a>
+        <a href="https://www.instagram.com" target="_blank"
+          class="a-no-style fa fa-instagram color-instagram size-custom mr-2 pr-1"></a>
+        <a href="https://www.facebook.com" target="_blank"
+          class="a-no-style fa fa-facebook color-facebook size-custom mr-2 pr-1"></a>
+      </div>
+    </div>
+  </footer>
   <!-- End Footer -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/validateForm.js"></script>
 </body>
 
 </html>

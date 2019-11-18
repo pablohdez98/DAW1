@@ -109,8 +109,8 @@
 
             <div class="md-form mb-2">
               <i class="material-icons text-danger">lock</i>
-              <input type="password" id="defaultForm-pass" class="form-control validate"
-                placeholder="Introduce tu contraseña">
+              <input type="password" id="defaultForm-pass" pattern=".{6,}" maxlength="12"
+                  class="form-control validate" placeholder="Introduce tu contraseña" required>
             </div>
 
             <div>
@@ -129,125 +129,17 @@
     <!-- Page Content -->
     <div class="container">
       <section>
-        <h1 class="text-center m-4">Toda la colección - Hombre</h1>
-        <div class="row align-items-center py-2 justify-content-center">
+        <h1 class="text-center my-4 bg-light py-3 rounded border border-dark">Toda la colección - Hombre</h1>
+        <div class="row align-items-center justify-content-center">
 
-          <div class="d-none mr-4 d-md-block col-md-3 bg-secondary text-center filter-menu mb-3 text-white">
-
+          <div class="d-none d-md-block col-md-2 bg-secondary text-center filter-menu mb-3 mx-4 text-white">
             <h2 class="my-3">Filtro</h2>
             <form action="">
               <!-- Futuro filtrado de ropa -->
             </form>
           </div>
           <!-- Lista de Productos -->
-          <div class="row col-12 col-md-9">
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Producto</a>
-                  </h4>
-                  <h5>20€</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                    aspernatur!
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Producto</a>
-                  </h4>
-                  <h5>20€</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                    aspernatur!
-                    Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Producto</a>
-                  </h4>
-                  <h5>20€</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                    aspernatur!
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Producto</a>
-                  </h4>
-                  <h5>20€</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                    aspernatur!
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Producto</a>
-                  </h4>
-                  <h5>20€</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                    aspernatur!
-                    Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Producto</a>
-                  </h4>
-                  <h5>20€</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                    aspernatur!
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
+          <div class="row col-12 col-md-9" id="product">
 
           </div>
           <!-- End Lista de Productos -->
@@ -288,6 +180,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/productoHombre.js"></script>
 </body>
 
 </html>

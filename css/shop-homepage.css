@@ -112,7 +112,7 @@ td {
 }
 
 .filter-menu {
-  min-height: 30em;
+  min-height: 25em;
 }
 
 .bg-secundario {
@@ -182,6 +182,27 @@ td {
 .right50 {
   float: right;
   width: 50%;
+}
+
+.boton-disable {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: gray;
+  letter-spacing: .2px;
+  text-decoration: line-through;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 60%;
+  background-color: rgba(255, 255, 255, 0.863);
+}
+
+.error-message{
+  display:none;
+  color: red;
 }
 
 .error {

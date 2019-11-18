@@ -9,10 +9,10 @@
 
   <title>CanaryShop</title>
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="../css/shop-homepage.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo copia.png" alt="Logo" width="150px">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo copia.png" alt="Logo" width="150px">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -34,17 +34,17 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Mujer </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="mujer/generico.html">Pantalones</a>
+              <a class="dropdown-item" href="../mujer/generico.html">Pantalones</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="mujer/generico.html">Blusas</a>
+              <a class="dropdown-item" href="../mujer/generico.html">Blusas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="mujer/generico.html">Camisas</a>
+              <a class="dropdown-item" href="../mujer/generico.html">Camisas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="mujer/generico.html">Chaquetas</a>
+              <a class="dropdown-item" href="../mujer/generico.html">Chaquetas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="mujer/generico.html">Vestidos</a>
+              <a class="dropdown-item" href="../mujer/generico.html">Vestidos</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="mujer/generico.html">Zapatos</a>
+              <a class="dropdown-item" href="../mujer/generico.html">Zapatos</a>
             </div>
           </li>
 
@@ -52,26 +52,26 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Hombre </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="hombre/generico.html">Pantalones</a>
+              <a class="dropdown-item" href="generico.html">Pantalones</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="hombre/generico.html">Blusas</a>
+              <a class="dropdown-item" href="generico.html">Blusas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="hombre/generico.html">Camisas</a>
+              <a class="dropdown-item" href="generico.html">Camisas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="hombre/generico.html">Chaquetas</a>
+              <a class="dropdown-item" href="generico.html">Chaquetas</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="hombre/generico.html">Trajes</a>
+              <a class="dropdown-item" href="generico.html">Trajes</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="hombre/generico.html">Zapatos</a>
+              <a class="dropdown-item" href="generico.html">Zapatos</a>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="../contacto.html">Contacto</a>
           </li>
 
           <li class="nav-item ">
-            <a class="nav-link" href="about.html">Sobre nosotros</a>
+            <a class="nav-link" href="../about.html">Sobre nosotros</a>
           </li>
 
           <ul class="navbar-nav navbar-custom">
@@ -80,7 +80,7 @@
                 href="">account_circle</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link material-icons mr-2" href="mycart.html">shopping_cart</a>
+              <a class="nav-link material-icons mr-2" href="../mycart.html">shopping_cart</a>
             </li>
             <form class="form-inline" action="#">
               <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
@@ -112,6 +112,7 @@
               <input type="password" id="defaultForm-pass" class="form-control validate"
                 placeholder="Introduce tu contraseña">
             </div>
+
             <div>
               <a href="">¿Nuevo usuario? Regístrate aquí</a>
             </div>
@@ -125,54 +126,30 @@
     </div>
     <!-- End Login -->
 
-
-    <div class="container my-4">
+    <!-- Page Content -->
+    <div class="container">
       <section>
-        <h1 class="text-center bg-light py-3 rounded border border-dark">Tu carrito</h1>
-        <!-- Table -->
-        <table class="table table-light mt-3 table-responsive-sm text-center">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Producto</th>
-              <th scope="col">Descripción</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Precio</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><img src="img//hombre/camisaAzul.jpg" class="photo-table d-block mx-auto" alt=""></td>
-              <td scope="row">Camiseta</td>
-              <td>1</td>
-              <td>15€</td>
-              <td>15€</td>
-            </tr>
-            <tr>
-              <td><img src="img/hombre/vaqueroHombre.jpg" class="photo-table d-block mx-auto" alt=""></td>
-              <td scope="row">Pantalones</td>
-              <td>2</td>
-              <td>25€</td>
-              <td>50€</td>
-            </tr>
-            <tr>
-              <td><img src="img/mujer/faldaNegra.jpg" class="photo-table d-block mx-auto" alt=""></td>
-              <td scope="row">Falda</td>
-              <td>1</td>
-              <td>29€</td>
-              <td>29€</td>
-            </tr>
-            <td class="text-center table-active" colspan="5">Total compra: 94€ </td>
-          </tbody>
-        </table>
-        <!--End Table-->
+        <h1 class="text-center my-4 bg-light py-3 rounded border border-dark">Lo más vendido - Hombre</h1>
 
-        <div class="d-flex flex-row-reverse">
-          <button class="btn btn-dark">Pagar</button>
-        </div>
+          <!-- Lista de Productos -->
+          <div class="row col-12 justify-content-center" id="trendProduct">
+
+          </div>
+          <!-- End Lista de Productos -->
       </section>
     </div>
   </div>
+  <!-- Paginación -->
+  <div class="container">
+    <ul class="pagination justify-content-end">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+  <!-- End Paginación -->
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
@@ -192,8 +169,10 @@
   </footer>
   <!-- End Footer -->
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/trendHombre.js"></script>
 </body>
 
 </html>
