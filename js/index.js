@@ -2,7 +2,7 @@ $(document).ready(loadJSON());
 
 function loadJSON() {
 
-  $.getJSON("../json/productos.json", function (json) {
+  $.getJSON("json/productos.json", function (json) {
     if (json.carousel) {
       for (let i=0; i<3; i++) {
         if (i == 0) {
