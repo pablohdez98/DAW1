@@ -2,7 +2,7 @@ $(document).ready(loadJSON());
 
 function loadJSON() {
 
-  $.getJSON("../json/productos.json", function (json) {
+  $.getJSON("json/productos.json", function (json) {
     if (json.clothes) {
       json.clothes.filter(f => f.gender == "male" || f.gender == "both").slice(0,6).forEach ( item => {
         $('#product').append('\
