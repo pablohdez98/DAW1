@@ -25,7 +25,7 @@ function loadJSON() {
             <div class="card h-100">\
               <a href="product.html?id=' + item.id + '"><img class="card-img-top" src="' + item.img + '" alt=""></a>\
               <div class="card-body">\
-                <p class="card-title"><a href="../product.html?id=' + item.id + '" class="text-secondary h5">' + item.name + '</a></p>\
+                <p class="card-title"><a href="product.html?id=' + item.id + '" class="text-secondary h5">' + item.name + '</a></p>\
                 <p class="h4">' + item.price + '</p>\
               </div>\
             </div>\
